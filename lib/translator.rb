@@ -33,7 +33,8 @@ end
 
 def get_english_meaning(file_path, emoticon)
   library = load_library('./lib/emoticons.yml')
- 
+ emoticon = library.keys.find do |key|
+   binding.pry
   
-
+end
 end
