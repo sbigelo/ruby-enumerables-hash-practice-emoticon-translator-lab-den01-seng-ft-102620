@@ -19,13 +19,30 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
  library = load_library('./lib/emoticons.yml')
-
+  response = nil
 
 
 
   puts "Sorry, that emoticon was not found"
 
 end
+
+
+
+response = nil
+  library["get_emoticon"].each do |english, japanese|
+    if emoticon == english
+      response = japanese
+    end
+  end
+  if response == nil
+    return "Sorry, that emoticon was not found"
+  else
+    return response
+
+
+
+
 # returns the English meaning of the Japanese emoticon (＾ｖ＾)
 # {"angel"=>{:english=>"O:)", :japanese=>"☜(⌒▽⌒)☞"},
 # "angry"=>{:english=>">:(", :japanese=>"ヽ(ｏ`皿′ｏ)ﾉ"}
