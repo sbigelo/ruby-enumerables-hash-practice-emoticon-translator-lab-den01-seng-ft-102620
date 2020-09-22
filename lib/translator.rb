@@ -26,7 +26,7 @@ else
   puts "Sorry, that emoticon was not found"
 
 end
-
+# returns the English meaning of the Japanese emoticon (＾ｖ＾)
 # {"angel"=>{:english=>"O:)", :japanese=>"☜(⌒▽⌒)☞"},
 # "angry"=>{:english=>">:(", :japanese=>"ヽ(ｏ`皿′ｏ)ﾉ"}
 
