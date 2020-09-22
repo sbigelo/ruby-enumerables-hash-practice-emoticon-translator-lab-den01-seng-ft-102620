@@ -19,11 +19,15 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
  library = load_library('./lib/emoticons.yml')
-binding.pry
+
 
 
 
 end
+
+# {"angel"=>{:english=>"O:)", :japanese=>"☜(⌒▽⌒)☞"},
+# "angry"=>{:english=>">:(", :japanese=>"ヽ(ｏ`皿′ｏ)ﾉ"}
+
 
 def get_english_meaning(file_path, emoticon)
   library = load_library('./lib/emoticons.yml')
